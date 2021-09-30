@@ -1,0 +1,6 @@
+git init
+git status
+git add ./ÎÄ¼şÃû
+git reset
+git congig --global user.name "William Liu"
+git commit -m "ÃèÊö"
