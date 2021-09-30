@@ -4,4 +4,10 @@ git add ./文件名
 git reset
 git congig --global user.name "William Liu"
 git commit -m "描述"
-kksk
+
+git log(--pretty=oneline)查看已提交及版号
+当前为Hard，上一个为HEAD^，上上个为HEAD^^,上100个位HEAD~100
+回上个版本：git reset --hard HEAD^（@HEAD{1}）（版本号前四位左右）
+git reflog查看版本号历史（命令历史）
+
+
