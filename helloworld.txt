@@ -2,12 +2,18 @@ git init
 git status
 git add ./文件名
 git reset
-git congig --global user.name "William Liu"
+git config --global user.name "William Liu"
 git commit -m "描述"
 
 git log(--pretty=oneline)查看已提交及版号
-当前为Hard，上一个为HEAD^，上上个为HEAD^^,上100个位HEAD~100
-回上个版本：git reset --hard HEAD^（@HEAD{1}）（版本号前四位左右）
+当前为HEAD，上一个为HEAD^，上上个为HEAD^^,上100个位HEAD~100
+回(前进)到上个版本：git reset --hard HEAD^（@HEAD{1}）（版本号前四位左右）
 git reflog查看版本号历史（命令历史）
 
+用git checkout(restore) -- 文件名  可以回到修改前状态（没有add的状态）
+用git reset HEAD <file>（git restore --staged <file>）  可以取消暂存
+注意用git status 看指令（HEAD也是）
+
+删除：手动删除或git rm <file> + commit
+恢复：git restore <file>（没有add）
 
